@@ -1,0 +1,235 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Hannari", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  width: 375px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-section{
+  width: 100%;
+  background-color: rgba(85, 58, 247, 1);
+  text-align: center;
+  border-radius: 25px;
+}
+
+.result-h{
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: -2px;
+  margin-top: 28px;
+}
+
+.circle{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 17px auto 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(117% 117% at 44% -17%,
+  #1125D6 0%, 
+  #322BEA 57.93%, 
+  rgba(254, 254, 254, 0.66) 100%);
+}
+
+.circle h2{
+  font-size: 48px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 100%;
+}
+
+.circle h6{
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 8px;
+}
+
+.great{
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 100%;
+}
+
+.stats-summary{
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
+  margin: 10px 55px 29px;
+}
+
+.lower-section{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.summery-h{
+  font-size: 20px;
+  margin: 31px 0 27px 45px;
+  letter-spacing: -2px;
+}
+
+.stats{
+  width: 287px;
+  margin: 0 auto 15px;
+}
+
+.category{
+  display: flex;
+}
+
+.stat-box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  border-radius: 11px;
+  padding: 15px 15px 15px 20px;
+}
+
+.reaction{
+  background-color: rgba(255, 85, 85, 0.1);
+}
+
+.memory{
+  background-color: rgba(255, 178, 30, 0.1);
+}
+
+.verbal{
+  background-color: rgba(0, 187, 143, 0.1);
+}
+
+.visual{
+  background-color: rgba(17, 37, 214, 0.1);
+}
+
+.stat-box h4{
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 14px;
+}
+
+#reaction{
+  color: rgba(255, 85, 85, 0.88);
+}
+
+#memory{
+  color: rgba(255, 178, 30, 1);
+}
+
+#verbal{
+  color: rgba(0, 187, 143, 1);
+}
+
+#visual{
+  color: rgba(17, 37, 214, 1);
+}
+
+.stat-box span{
+  font-size: 18px;
+}
+
+.max-num{
+  color: rgba(0, 0, 0, 0.47);
+}
+
+.con-btn{
+  padding: 13px 99px;
+  background-color: rgba(48, 59, 89, 1);
+  border: none;
+  border-radius: 35px;
+  margin: 0 45px 41px;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+/*მედია ქუერი არი გამოყენებული რომ მობილურის დისპლეიდან დესკტოპისაში გადავიდეს*/
+@media (min-width: 738px){  
+  main{
+    width: 738px;
+    border-radius: 15px;
+    box-shadow: 60px 20px 250px 0px rgba(17, 37, 214, 0.17);
+    flex-direction: row;
+  }
+
+  .left-section{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(96, 62, 252, 1);
+    border-radius: 15px 0 0 15px;
+  }
+
+  .result-h{
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  
+  .circle{
+    width: 200px;
+    height: 200px;
+    margin: 27px auto 31px;
+  }
+  
+  .circle h2{
+    font-size: 78px;
+  }
+  
+  .circle h6{
+    font-size: 16px;
+  }
+  
+  .great{
+    font-size: 32px;
+  }
+  
+  .stats-summary{
+    font-size: 18px;
+    margin: 20px 60px 40px 60px; 
+  }
+
+  .right-section{
+    height: 100%;
+    width: 50%;
+    border-radius: 0 15px 15px 0;
+  }
+  
+  .summery-h{
+    font-size: 24px;
+    margin: 40px 0 24px 41px;
+  }
+  
+  .stats{
+    margin: 0 auto 39px;
+  }
+
+  .stat-box h4{
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 15px;
+  }
+  
+  .con-btn{
+    padding: 13.5px 98px;
+    border-radius: 25px;
+  }
+}
